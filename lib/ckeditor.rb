@@ -50,6 +50,12 @@ module Ckeditor
   mattr_accessor :file_manager_image_uri
   @@file_manager_image_uri = "/ckeditor/pictures"
   
+  mattr_accessor :file_manager_image_model
+  @@file_manager_image_model = "Ckeditor::Picture"
+  
+  mattr_accessor :file_manager_file_model
+  @@file_manager_file_model = "Ckeditor::AttachmentFile"
+  
   IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/jpg', 'image/pjpeg', 'image/tiff', 'image/x-png']
   
   # Get the image class from the image reference object.
